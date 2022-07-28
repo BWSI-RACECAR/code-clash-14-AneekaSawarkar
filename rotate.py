@@ -41,6 +41,8 @@ class Solution:
                 matrix[row1-i][col0] = matrix[row1][col1-i]
                 matrix[row1][col1-i] = matrix[row0+i][col1]
                 matrix[row0+i][col1] = temp
+            row0 += 1
+            col0 += 1
             row1 += 1
             col1 += 1
 
