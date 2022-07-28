@@ -30,6 +30,8 @@ class Solution:
         # return: List[List[int]]
         
         # TODO: Write code below to return a nested list with the solution to the prompt
+
+        '''
         row0 = 0
         col0 = 0
         row1 = len(matrix) - 1
@@ -45,6 +47,17 @@ class Solution:
             col0 += 1
 
         return matrix
+        '''
+        
+        newmatrix = []
+
+        # TODO: Write code below to return a nested list with the solution to the prompt
+        for x in range(len(matrix)):
+            xlist = []
+            for y in matrix[::-1]:
+                xlist.append(y[x])
+            newmatrix.append(xlist)
+        return newmatrix
 
         pass
 
